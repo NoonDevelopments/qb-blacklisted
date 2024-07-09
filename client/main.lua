@@ -143,7 +143,7 @@ AddEventHandler('blacklist:preventDriving', function(isDrivingBan)
     if IsPedInAnyVehicle(playerPed, false) then
         local vehicle = GetVehiclePedIsIn(playerPed, false)
         if isDrivingBan or checkVehicleRestriction(vehicle) then
-            TaskLeaveVehicle(playerPed, vehicle, 16)
+            TaskLeaveVehicle(playerPed, vehicle, 4)
             if isDrivingBan == true then
                 TriggerEvent('QBCore:Notify', 'You are banned from driving any vehicle.', 'error')
             else
