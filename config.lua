@@ -2,9 +2,7 @@ Config = {}
 
 
 Config.RestrictedJobs = { -- add the jobs here that you DO NOT want the person blacklisted to be able to do
-    'police',
-    'ambulance',
-    'mechanic',
+    'taxi',
     'tow'
 }
 
